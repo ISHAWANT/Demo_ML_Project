@@ -26,3 +26,4 @@ docker ps
 to stop any docker conatiner
 ```
 docker stop <container_id>
+```
