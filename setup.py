@@ -3,7 +3,7 @@ from typing import List
 
 # declearing variable for setup function
 PROJECT_NAME='housing-predictor'
-VERSION='0.0.1'
+VERSION='0.0.2'
 AUTHOR='ishawant'
 DESCRIPTION='This is a first FSDS Nov batch Machine Learning Project'
 PACKAGES=['housing']
@@ -29,4 +29,3 @@ setup(
     install_requires=get_requirements_list()  
 )
 # python setup.py install
-    
