@@ -3,7 +3,7 @@ from typing import List
 
 # declearing variable for setup function
 PROJECT_NAME='housing-predictor'
-VERSION='0.0.2'
+VERSION='0.0.3'
 AUTHOR='ishawant'
 DESCRIPTION='This is a first FSDS Nov batch Machine Learning Project'
 PACKAGES=['housing']
@@ -17,7 +17,7 @@ def get_requirements_list()->List[str]:
         
         return This function is going to return a list which contain name of libraries mentioned in requirements.txt file 
         """
-        requirement_file.readlines() 
+        requirement_file.readlines().remove('-e .')
     
 
 setup(
@@ -30,3 +30,4 @@ setup(
 )
 # python setup.py install
 
+ 
