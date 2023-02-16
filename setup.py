@@ -1,5 +1,5 @@
-from setuptools import setup 
-from typing import List 
+from setuptools import setup,find_packages
+from typing import List
 
 # declearing variable for setup function
 PROJECT_NAME='housing-predictor'
@@ -25,7 +25,8 @@ setup(
     version=VERSION,
     author=AUTHOR,
     description=DESCRIPTION,
-    packages=PACKAGES,
+    packages=find_packages(),  #packages= ['housing']
     install_requires=get_requirements_list()  
 )
 # python setup.py install
+
