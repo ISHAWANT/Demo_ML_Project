@@ -1,5 +1,4 @@
-from housing.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
-
+from housing.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainerConfig,ModelEvaluationConfig,ModelPusherConfig,TrainingPipelineConfig
 
 
 class Configuration: 
@@ -15,16 +14,16 @@ class Configuration:
     def get_data_transformation_config(self)->DataTransformationConfig:
         pass
     
-    def get_model_trainer_config(self):
+    def get_model_trainer_config(self)->ModelTrainerConfig:
         pass
     
-    def get_model_evaluation_config(self):
+    def get_model_evaluation_config(self)->ModelEvaluationConfig:
         pass
     
-    def get_model_pusher_config(self):
+    def get_model_pusher_config(self)->ModelPusherConfig:
         pass
     
-    def get_training_pipeline_config(self):
+    def get_training_pipeline_config(self)->TrainingPipelineConfig:
         pass 
-    
+
     
