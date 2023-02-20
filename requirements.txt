@@ -4,4 +4,5 @@ numpy
 gunicorn
 typing 
 datetime
+PyYaml
 -e .
