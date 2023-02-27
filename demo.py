@@ -4,7 +4,7 @@ from housing.logger import logging
  
 def main():
     try:
-        pipeline = Pipeline
+        pipeline = Pipeline()
         pipeline.run_pipeline()
     except Exception as e:
         logging.error(f"{e}")
@@ -12,3 +12,5 @@ def main():
      
 if __name__=="__main__":
     main() 
+    
+ 

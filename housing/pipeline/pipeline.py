@@ -27,6 +27,7 @@ class Pipeline:
         try:
             # data ingestion 
             data_ingestion_artifact = self.start_data_ingestion()
+            
         except Exception as e: 
             raise HousingExeption(e,sys) from e 
         
