@@ -19,7 +19,7 @@ class Configuration:
     
     def get_data_ingestion_config(self)->DataIngestionConfig:
         try:
-            # raise Exception("Testing Exception") #add here error for checking exception is working fine or not
+            raise Exception("Testing Exception") #add here error for checking exception is working fine or not
             data_ingestion_info=self.config_info[DATA_INGESTION_CONFIG_KEY]
             
             artifact_dir = self.training_pipeline_config.artifact_dir
